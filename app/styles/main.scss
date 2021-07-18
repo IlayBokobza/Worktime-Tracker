@@ -1,0 +1,32 @@
+//files
+@import "./sass/navbar";
+@import "./sass/timer";
+@import "./sass/archive";
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection{
+    background-color: #eee;
+}
+
+body{
+    background-color: #fff;
+}
+
+a,button{
+    cursor: pointer;
+    user-select: none;
+}
+
+a,a:visited,a:link{
+    text-decoration: none;
+    color: #000;
+}

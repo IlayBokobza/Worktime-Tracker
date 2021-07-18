@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+.navbar {
+  font-size: 35px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: #000; }
+  .navbar__item {
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: background-color .2s;
+    user-select: none; }
+    .navbar__item span {
+      color: #fff; }
+    .navbar__item:hover {
+      background-color: #262626; }
+    .navbar__item:active {
+      background-color: #404040; }
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(25vh); }
+  .timer__clock {
+    font-size: 70px;
+    margin-bottom: 20px; }
+  .timer__btn {
+    font-size: 20px;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color .2s; }
+    .timer__btn:hover {
+      background-color: #333333; }
+    .timer__btn:active {
+      background-color: #4d4d4d; }
+
+.archive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh; }
+  .archive__item {
+    font-size: 30px;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px solid #494949;
+    border-left: 1px solid #494949;
+    padding: 10px;
+    border-bottom: 1px solid #494949; }
+    .archive__item:not(:first-child):not(:last-child):hover {
+      background-color: #cdcdcd; }
+    .archive__item:first-child {
+      border-top: 1px solid #494949; }
+
+.archive-change-btn input {
+  display: none; }
+
+.archive-change-btn .button {
+  user-select: none;
+  cursor: pointer;
+  background-color: #000;
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 10px; }
+  .archive-change-btn .button span {
+    font-size: 50px;
+    color: #fff; }
+
+.download-btn .button {
+  right: 100px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+::selection {
+  background-color: #eee; }
+
+body {
+  background-color: #fff; }
+
+a, button {
+  cursor: pointer;
+  user-select: none; }
+
+a, a:visited, a:link {
+  text-decoration: none;
+  color: #000; }

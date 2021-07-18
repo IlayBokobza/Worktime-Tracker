@@ -1,0 +1,55 @@
+.archive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+
+    &__item{
+        font-size: 30px;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        border-right: 1px solid #494949;
+        border-left: 1px solid #494949;
+        padding:10px;
+        border-bottom:1px solid #494949;
+
+        &:not(:first-child):not(:last-child):hover{
+            background-color: darken(#e6e6e6, 10);
+        }
+
+        &:first-child{
+            border-top: 1px solid #494949;
+        }
+    }
+}
+
+.archive-change-btn{
+    input{
+        display: none;
+    }
+
+    .button{
+        user-select: none;
+        cursor: pointer;
+        background-color: #000;
+        width: 70px;
+        height: 70px;
+        display: grid;
+        place-content: center;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        
+        
+        span{
+            font-size: 50px;
+            color:#fff;
+        }
+    }
+}
+
+.download-btn .button{
+    right: 100px;
+}

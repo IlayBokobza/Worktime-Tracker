@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="../scripts/archive.js"></script>
+    <title>Work time Tracker | Archive</title>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href="./timer.html" class="navbar__item">
+      <span class="material-icons">schedule</span>
+      <span>Timer</span>
+    </a>
+    <a class="navbar__item">
+      <span class="material-icons">archive</span>
+      <span>Archive</span>
+    </a>
+  </nav>
+  <!-- archive -->
+  <main class="archive" id="archive">
+      <div class="archive__item">
+          <span class="archive__item__prop">Date</span>
+          <span class="archive__item__prop">Time</span>
+      </div>
+  </main>
+  <!-- change arcive btn -->
+  <div class="archive-change-btn">
+    <input type="file" id="archive-file-select">
+    <label class="button" for="archive-file-select">
+      <span class="material-icons">text_snippet</span>
+    </label>
+  </div>
+  <!-- download execl -->
+  <div class="archive-change-btn download-btn">
+    <button class="button" id="download-excel">
+      <span class="material-icons">download</span>
+    </button>
+  </div>
+  <!-- invisble link to download excel -->
+  <a style="display: none;" target="_blank" download="Worktime-Tracker-Archive.csv" id="download"></a>
+</body>
+</html>

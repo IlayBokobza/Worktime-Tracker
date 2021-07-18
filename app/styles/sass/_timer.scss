@@ -1,0 +1,33 @@
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(25vh);
+
+    &__clock{
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    &__btn{
+        font-size: 20px;
+        background-color: transparent;
+        padding: 5px 10px;
+        color:#fff;
+        background-color: #000;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        box-shadow: 1px 3px 5px rgba(#000,.5);
+        transition: background-color .2s;
+
+        &:hover{
+            background-color: lighten(#000,20);
+        }
+
+        &:active{
+            background-color: lighten(#000,30);
+        }
+    }
+}

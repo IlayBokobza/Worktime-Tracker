@@ -1,0 +1,24 @@
+{
+  "name": "work-time-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"electron .\" \"node-sass app/styles/main.scss app/styles/styles.css -w\"",
+    "start": "electron .",
+    "watch-sass": "node-sass app/styles/main.scss app/styles/styles.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "dayjs": "^1.10.6",
+    "electron": "^13.1.7",
+    "os": "^0.1.2"
+  },
+  "devDependencies": {
+    "electron-reloader": "^1.2.1",
+    "node-sass": "^6.0.1"
+  }
+}
