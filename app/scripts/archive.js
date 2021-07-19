@@ -29,17 +29,21 @@ fileInput.addEventListener('change',(e) => {
     general.moveArchive(fileInput.files[0].path)
 })
 
+//execl download logic
 const toExcelBtn = document.getElementById('download-excel')
 const downloadBtn = document.getElementById('download')
 toExcelBtn.addEventListener('click',(e) => {
     e.preventDefault()
     const archive = general.getArchive();
-
     let output = 'Date,Time'
+    let totalTime = 0
 
     archive.forEach(item => {
+        totalTime += item.time
         output += `\n${item.date},${general.getTimeFormat(item.time)}`
     })
+
+    output += `\nTotal,${general.getTimeFormat(totalTime)}`
 
     const fileData = 'data:application/text;base64, ' + Buffer.from(output).toString('base64')
     downloadBtn.href = fileData;
